@@ -5,7 +5,7 @@ def main() -> None:
     pygame.init()
 
     WIN = pygame.display.set_mode((800, 600))
-    ICON = pygame.image.load("../assets/icon.png")
+    ICON = pygame.image.load("assets/icon.png")
 
     pygame.display.set_caption("Black Hole Simulator")
     pygame.display.set_icon(ICON)
