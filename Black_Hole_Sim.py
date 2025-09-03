@@ -5,6 +5,7 @@ pygame.init()
 
 WIN = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Black Hole Simulator")
+pygame.display.set_icon(pygame.image.load("icon.png"))
 
 clock = pygame.time.Clock()
 on = True
@@ -16,5 +17,4 @@ while True:
             on = False
             break
 
-    print("askdasd")
     clock.tick(FPS)
