@@ -5,16 +5,16 @@ def main() -> None:
     pygame.init()
 
     WIN = pygame.display.set_mode((800, 600))
+    pygame.display.set_caption("Black Hole Simulation")
+    
     ICON = pygame.image.load("assets/icon.png")
-
-    pygame.display.set_caption("Black Hole Simulator")
     pygame.display.set_icon(ICON)
 
     clock = pygame.time.Clock()
     on = True
     FPS = 165
 
-    while True:
+    while on:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 on = False
